@@ -3,12 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Testing Read NFC</title>
   </head>
   <body>
-    <p>Status Web: <span id="nfc-stat"> loading</span></p>
-    <button onclick="test()">Read NFC</button>
-    <button id="reqPermission">Test</button>
+    <div class="container">
+      <p>
+        Status Web NFC APi: <br /><span id="nfc-stat">
+          Click button to check</span
+        >
+      </p>
+      <button onclick="test()">Compability Web APi Nfc</button>
+    </div>
+    <br />
+    <button id="reqPermission">Test Permission and Read</button>
     <script src="./index.js"></script>
   </body>
 </html>
