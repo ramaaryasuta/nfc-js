@@ -16,11 +16,12 @@ reqPermission.addEventListener("click", async () => {
   try {
     const ndef = new NDEFReader();
     await ndef.scan();
+    alert("Tempelkan NFC Tag");
     // fungsi membaca NFC Tag
     ndef.addEventListener("reading", ({ message, serialNumber }) => {
       console.log("Tag detected:", serialNumber);
-      console.log("Message:", message);
-      alert(`Tag terbaca: ${serialNumber}\nMessage: ${message}`);
+      console.log("pesan:", message);
+      alert(`Tag terbaca: ${serialNumber}\nPesan: ${message}`);
       // Process the message from the tag
     });
   } catch (error) {
