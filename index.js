@@ -10,3 +10,14 @@ function test() {
     title.innerHTML = "Web NFC is not supported.";
   }
 }
+
+const reqPermission = document.getElementById("reqPermission");
+reqPermission.addEventListener("click", async () => {
+  try {
+    const ndef = new NDEFReader();
+    await ndef.scan();
+    alert("Meminta izin berhasil");
+  } catch (error) {
+    alert("Gagal meminta izin NFC");
+  }
+});
