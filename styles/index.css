@@ -1,0 +1,18 @@
+.hero-container {
+  padding: 10px;
+  text-align: center;
+}
+
+.container-feature {
+  padding: 20px;
+}
+
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 20px;
+}
